@@ -1,0 +1,16 @@
+{
+  "name": "database_mongodb",
+  "version": "1.0.0",
+  "description": "----------- ## Intro to Databases \t* What is a database? \t\t* A collection of data/information. \t\t* Has an interface \t\t* `SELECT * FROM user;` \t* SQL(relationals) vs NoSQL(non-relationals)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.3.4",
+    "mongoose": "^5.7.12"
+  }
+}
