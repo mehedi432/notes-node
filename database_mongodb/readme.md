@@ -64,6 +64,7 @@ userId  |  commentId
 	* remove -> for removing data from collection,
 
 ## Examples for CRUD
+```js
 insert in mongodb
 	> use dogs
 	> db.dogs.insert({name: "husky", breed: "Mutt", age: 9})
@@ -75,6 +76,7 @@ insert in mongodb
 	> db.dogs.update({name: "husky"}, {$set: {name: "Tater", isCute: true}})
 	> db.dogs.remove({}) # will delete or remove everything
 	> db.dogs.remove({ name: "husky" }) # Removing huskys all attributes
+```
 
 # Mongoose
 * What is mongoose?
