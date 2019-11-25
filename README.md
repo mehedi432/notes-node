@@ -1,7 +1,7 @@
 ### notes-node - Learning Nodejs, javascript, mongodb, ejs(templating language)
 Welcome to my repos about learning nodejs and javascript. In this repository I will try to make notes about nodejs learnings and also share my knowledge about what i have learnt during my learning period.
 
-`js
+`javascript
 var learning = require('all-learning');
 
 learnig.spread({
