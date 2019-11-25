@@ -11,7 +11,7 @@
 ## Example of SQL Database
 * User table
 id |  name |  age  |  city  
---------------------------
+---|-------|-------|------
 1  |  babo |  25   |  NYC
 2  |  mamo |  23   |  BD
 3  |  kamo |  22   |  IN
@@ -19,7 +19,7 @@ id |  name |  age  |  city
 
 * Comments table
 id  |  comments
----------------
+----|----------
 1   |  "Good job"
 2   |  "Why this is?"
 3   |  "What is the reason?"
@@ -27,12 +27,13 @@ id  |  comments
 
 * USER/COMMENTS JOIN TABLE
 userId  |  commentId
--------------------
-1		|  3
+--------|----------
+1	|  3
 2       |  4
 
 
 ### In mongodb or noSQL database we can we can define database as -
+```js
 {
 	name: "Kashem",
 	age: 24,
@@ -43,7 +44,7 @@ userId  |  commentId
 	],
 	favColor: "teal",
 }
-
+```
 
 # Intro to mongodb - 101
 	* What is mongodb?
@@ -81,7 +82,7 @@ insert in mongodb
 * Why are we using mongoose?
 * Interacting with Mongo Database using Mongoose
 	* For working with mongodb we need to import it
-	`js
+	```js
 		var mongoose = require('mongoose');
 		mongoose.connect("mongodb://localhost/{name_database}");
 
@@ -123,7 +124,7 @@ insert in mongodb
 			if (err) throw err;
 			console.log(person);
 		});
-	` 
+``` 
 
 
 
