@@ -1,0 +1,33 @@
+<% include partials/header %>
+
+    <div class="container">
+        <header class="jumbotron">
+            <div class="container text-center">
+                <h2><strong>Welcome to Bootcamp!</strong></h2>
+                <p><small>View our campgrounds around Bangladesh</small>s</p>
+                <p class="">
+                    <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add a new campground</a>
+                </p>
+            </div>
+        </header>
+
+        <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+            <% campgrounds.forEach(campground => { %>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="<%= campground.image %>" alt="" srcset="">
+                        <div class="caption">
+                            <h4><strong><%= campground.name %></strong></h4>
+                        </div>
+                        <p>
+                            <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More</a>
+                        </p>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+        <a href="/campgrounds/new">Add a new campgrounds</a>
+    </div>
+
+
+<% include partials/footer %>
