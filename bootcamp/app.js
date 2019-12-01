@@ -56,5 +56,5 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 
 var port = process.env.PORT || 3000;
 app.listen(port, function(){
-   console.log(`The BootCamp Server Has Started! ${port}`);
+   console.log(`The BootCamp Server has Started! ${port}`);
 });
